@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-task</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <div class="attributes">
+            <label for="surname">Фамилия*:</label>
+            <input type="text" id="surname" name="surname" required title="Пожалуйста, введите вашу фамилию">
+
+            <label for="name">Имя*:</label>
+            <input type="text" id="name" name="name" required title="Пожалуйста, введите ваше имя">
+
+            <label for="patronymic">Отчество:</label>
+            <input type="text" id="patronymic" name="patronymic">
+
+            <label for="birthdate">Дата рождения*:</label>
+            <input type="date" id="birthdate" name="birthdate" required title="Пожалуйста, введите вашу дату рождения">
+
+            <label for="phone">Номер телефона*:</label>
+            <input placeholder="11 цифр. Начинается с 7" type="tel" id="phone" name="phone" pattern="[7][0-9]{10}"
+                required title="Пожалуйста, введите ваш номер телефона в указанном формате">
+
+            <div class="gender">
+                <label for="gender">Пол:</label>
+                <input type="radio" id="male" name="gender" value="male"> Мужской
+                <input type="radio" id="female" name="gender" value="female"> Женский
+            </div>
+
+            <label for="client-group">Группа клиентов*:</label>
+            <select id="client-group" name="client-group" multiple required
+                title="Выберите хотя бы одну группу клиентов">
+                <option value="VIP">VIP</option>
+                <option value="Проблемные">Проблемные</option>
+                <option value="ОМС">ОМС</option>
+            </select>
+
+            <label for="doctor">Лечащий врач:</label>
+            <select id="doctor" name="doctor">
+                <option value="Иванов">Иванов</option>
+                <option value="Захаров">Захаров</option>
+                <option value="Чернышева">Чернышева</option>
+            </select>
+
+            <label for="address">Адрес:</label>
+            <input type="text" id="index" name="index" placeholder="Индекс">
+            <input type="text" id="country" name="country" placeholder="Страна">
+            <input type="text" id="region" name="region" placeholder="Область">
+            <input type="text" id="city" name="city" placeholder="Город*" required
+                title="Пожалуйста, введите ваш город">
+            <input type="text" id="street" name="street" placeholder="Улица">
+            <input type="text" id="house" name="house" placeholder="Дом">
+
+            <label for="passport-type">Тип документа*:</label>
+            <select id="passport-type" name="passport-type" required title="Пожалуйста, выберите тип документа">
+                <option value="Паспорт">Паспорт</option>
+                <option value="Свидетельство о рождении">Свидетельство о рождении</option>
+                <option value="Вод. удостоверение">Вод. удостоверение</option>
+            </select>
+
+            <label for="passport-series">Серия:</label>
+            <input type="text" id="passport-series" name="passport-series">
+
+            <label for="passport-number">Номер:</label>
+            <input type="text" id="passport-number" name="passport-number">
+
+            <label for="passport-issued-by">Кем выдан:</label>
+            <input type="text" id="passport-issued-by" name="passport-issued-by">
+
+            <label for="passport-issue-date">Дата выдачи*:</label>
+            <input type="date" id="passport-issue-date" name="passport-issue-date" required
+                title="Пожалуйста, введите дату выдачи документа">
+
+            <div class="sms">
+                <input type="checkbox" id="no-sms" name="no-sms">
+                <label for="no-sms">Не отправлять СМС</label>
+            </div>
+
+            <div class="save">
+                <button class="submit" type="submit">Сохранить</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="successMessage" style="display: none;"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>

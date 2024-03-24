@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.attributes {
+    color: rgb(138, 30, 149);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 30%;
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    box-shadow: 4px 4px 23px 5px rgba(34, 60, 80, 0.23);
+    border-radius: 5px;
+}
+
+.attributes input {
+    height: 35px;
+    vertical-align: -12px;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 40px;
+    padding-inline: 10px;
+}
+
+.attributes select {
+    margin-bottom: 15px;
+}
+
+#doctor,
+#client-group,
+#passport-type {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-inline: 5px;
+}
+
+
+.submit {
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-family: 'Montserrat';
+    border: none;
+    border-radius: 40px;
+    background: -webkit-linear-gradient(45deg, rgb(159, 27, 128) 37%, rgb(124, 31, 161) 79%);
+    text-transform: uppercase;
+}
+
+
+#birthdate,
+#phone,
+#doctor,
+#client-group,
+#passport-type {
+    font-family: 'Montserrat';
+}
+
+/* Адаптивы */
+@media (max-width: 430px) {
+    .attributes {
+        color: rgb(138, 30, 149);
+        font-family: 'Montserrat';
+        font-size: 120%;
+        font-weight: 500;
+        margin-top: 0%;
+        margin-bottom: 1px;
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+        background-color: rgb(255, 255, 255);
+        padding: 2%;
+        box-shadow: 4px 4px 23px 5px rgba(34, 60, 80, 0.23);
+        border-radius: 5px;
+    }
+
+    .attributes input {
+        height: 35px;
+        vertical-align: -12px;
+        font-family: 'Montserrat';
+        margin-top: 5px;
+        background-color: rgb(255, 255, 255);
+        border: solid 1px rgb(201, 201, 201);
+        border-radius: 40px;
+        padding-inline: 10px;
+    }
+}
